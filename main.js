@@ -1,4 +1,4 @@
-// Update an element in the DOM (Document Object Model)
+// Updatere et HTML element (DOM, Document Object Model)
 function setTitle() {
   let header = document.getElementById("header")
   header.innerText = "Satt via JavaScript"
@@ -10,6 +10,7 @@ function logInnerText() {
   console.log(header.innerText)
 }
 
+// 
 function logExamples() {
   // Eksempler for de forskjellige typen
   let tall = 42
