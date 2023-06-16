@@ -1,16 +1,18 @@
+// Elemnter som vi ønsker å bruke
+const headerElement = document.getElementById("header")
+
+
 // Updatere et HTML element (DOM, Document Object Model)
 function setTitle() {
-  let header = document.getElementById("header")
-  header.innerText = "Satt via JavaScript"
+  headerElement.innerText = "Satt via JavaScript"
 }
 
 // Hente informasjon fra HTML (DOM)
 function logInnerText() {
-  let header = document.getElementById("header")
-  console.log(header.innerText)
+  console.log(headerElement.innerText)
 }
 
-// 
+// Kun for å vise eksempler
 function logExamples() {
   // Eksempler for de forskjellige typen
   let tall = 42
@@ -26,6 +28,16 @@ function logExamples() {
     }
   }
   
-  console.log(header)
-  console.dir(header)
+  console.log(headerElement)
+  console.dir(headerElement)
 }
+
+
+// Vi kan gruppere sett med funksjoner inne i objekter
+const myFunctions = {
+  setTitle: setTitle,
+  logInnerText: logInnerText,
+  logExamples: logExamples,
+}
+// Og kjøre de litt som vanlige funksjoner
+myFunctions.logExamples()
