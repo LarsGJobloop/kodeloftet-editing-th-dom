@@ -12,6 +12,11 @@ function logInnerText() {
   console.log(headerElement.innerText)
 }
 
+// Sett css klassen til en ny verdi
+function changeClass() {
+  headerElement.classList = "new-title"
+}
+
 // Kun for å vise eksempler
 function logExamples() {
   // Eksempler for de forskjellige typen
@@ -40,4 +45,4 @@ const myFunctions = {
   logExamples: logExamples,
 }
 // Og kjøre de litt som vanlige funksjoner
-myFunctions.logExamples()
+// myFunctions.logExamples()
