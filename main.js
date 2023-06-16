@@ -1,5 +1,3 @@
-setTitle()
-
 // Update an element in the DOM (Document Object Model)
 function setTitle() {
   let header = document.getElementById("header")
